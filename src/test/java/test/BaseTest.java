@@ -17,15 +17,16 @@ public class BaseTest {
     Common common;
     String browser = "chrome";
     String url = "https://www.amazon.in/";
-
+    SearchPage1 searchPage1;
     @BeforeTest
-    public void beforeTest() {
+    public void beforeTest() throws InterruptedException {
         common = new Common();
         common.setuBrowser(browser, url);
         driver = common.getBrowser();
         searchPage1 = new SearchPage1(driver);
         searchPage1.enterproductName("iphone 16e");
         searchPage1.clickSearchButton();
+        Thread.sleep(3000);
     }
 
     @AfterTest
@@ -33,7 +34,7 @@ public class BaseTest {
         common.quitBrowser();
     }
 
-    SearchPage1 searchPage1;
+
 
 
 
@@ -41,9 +42,14 @@ public class BaseTest {
     public void searchProductNamelistvalidate() throws InterruptedException {
 
         searchPage1 = new SearchPage1(driver);
+
       String searchProductName1 = searchPage1.getproductNameText();
 
-       String searchProductName2 = searchPage1.getResultText();
+        String searchProductName2 = searchPage1.getResultText();
+
+
+
+
 
        // String resultText1 = "1-16 of 962 results for";
      //String expectedResult =

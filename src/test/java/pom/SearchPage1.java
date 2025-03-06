@@ -17,8 +17,8 @@ public class SearchPage1 {
     private WebElement searchbutton;
 
 @CacheLookup
-@FindBy(xpath = "//span[contains(text(),'1-16 of 962 results for')]")
-private WebElement result;
+@FindBy(xpath = "//span[starts-with(text(),'1-16')]")
+private WebElement resulttext;
 
     public SearchPage1(WebDriver driver) {
         this.driver = driver;
@@ -39,6 +39,6 @@ private WebElement result;
         return textsearch.getText();
     }
     public String getResultText() {
-        return result.getText();
+        return resulttext.getText();
     }
 }
