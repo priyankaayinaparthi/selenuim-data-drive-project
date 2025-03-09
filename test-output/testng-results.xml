@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[expected Brand : Apple]]>
+    </line>
+    <line>
+      <![CDATA[actual Brand : Apple]]>
+    </line>
+    <line>
+      <![CDATA[expected Operating_system : iOS]]>
+    </line>
+    <line>
+      <![CDATA[actual Operating_system : iOS]]>
+    </line>
+    <line>
+      <![CDATA[expected Memory_storage_capacity : 128 GB]]>
+    </line>
+    <line>
+      <![CDATA[actual Memory_storage_capacity : 128 GB]]>
+    </line>
+    <line>
+      <![CDATA[expected ScreenSize : 6.1 Inches]]>
+    </line>
+    <line>
+      <![CDATA[actual ScreenSize : 6.1 Inches]]>
+    </line>
+    <line>
+      <![CDATA[expected ModelName iPhone 16e]]>
+    </line>
+    <line>
+      <![CDATA[actual ModelName : iPhone 16e]]>
+    </line>
     <line>
       <![CDATA[expected Result : ₹57,900]]>
     </line>
@@ -20,16 +50,16 @@
       <![CDATA[actual Result : 20]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-03-09T14:36:21 IST" name="All Test Suite" finished-at="2025-03-09T14:36:51 IST" duration-ms="30586">
+  <suite started-at="2025-03-09T16:44:10 IST" name="All Test Suite" finished-at="2025-03-09T16:44:37 IST" duration-ms="27096">
     <groups>
     </groups>
-    <test started-at="2025-03-09T14:36:21 IST" name="all" finished-at="2025-03-09T14:36:51 IST" duration-ms="30586">
+    <test started-at="2025-03-09T16:44:10 IST" name="all" finished-at="2025-03-09T16:44:37 IST" duration-ms="27096">
       <class name="test.SearchPage">
-        <test-method signature="searchProductName()[pri:0, instance:test.SearchPage@2ca26d77]" started-at="2025-03-09T14:36:44 IST" name="searchProductName" finished-at="2025-03-09T14:36:49 IST" duration-ms="4156" status="PASS">
+        <test-method signature="searchProductName()[pri:0, instance:test.SearchPage@6ca18a14]" started-at="2025-03-09T16:44:33 IST" name="searchProductName" finished-at="2025-03-09T16:44:35 IST" duration-ms="2640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductName -->
-        <test-method signature="searchProductNamelistvalidate()[pri:0, instance:test.SearchPage@2ca26d77]" started-at="2025-03-09T14:36:49 IST" name="searchProductNamelistvalidate" finished-at="2025-03-09T14:36:49 IST" depends-on-methods="test.SearchPage.searchProductName" duration-ms="244" status="PASS">
+        <test-method signature="searchProductNamelistvalidate()[pri:0, instance:test.SearchPage@6ca18a14]" started-at="2025-03-09T16:44:35 IST" name="searchProductNamelistvalidate" finished-at="2025-03-09T16:44:35 IST" depends-on-methods="test.SearchPage.searchProductName" duration-ms="3" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[expected Result : iphone 16e]]>
@@ -39,7 +69,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- searchProductNamelistvalidate -->
-        <test-method signature="testSearchForValidate()[pri:0, instance:test.SearchPage@2ca26d77]" started-at="2025-03-09T14:36:49 IST" name="testSearchForValidate" finished-at="2025-03-09T14:36:49 IST" depends-on-methods="test.SearchPage.searchProductName" duration-ms="51" status="PASS">
+        <test-method signature="testSearchForValidate()[pri:0, instance:test.SearchPage@6ca18a14]" started-at="2025-03-09T16:44:35 IST" name="testSearchForValidate" finished-at="2025-03-09T16:44:35 IST" depends-on-methods="test.SearchPage.searchProductName" duration-ms="35" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[expected Result : 20]]>
@@ -51,7 +81,11 @@
         </test-method> <!-- testSearchForValidate -->
       </class> <!-- test.SearchPage -->
       <class name="test.ProductPrice">
-        <test-method signature="ClicFirstLink()[pri:0, instance:test.ProductPrice@776a6d9b]" started-at="2025-03-09T14:36:30 IST" name="ClicFirstLink" finished-at="2025-03-09T14:36:44 IST" duration-ms="13845" status="PASS">
+        <test-method signature="searchProductName()[pri:0, instance:test.ProductPrice@70e38ce1]" started-at="2025-03-09T16:44:30 IST" name="searchProductName" finished-at="2025-03-09T16:44:33 IST" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductName -->
+        <test-method signature="ClicFirstLink()[pri:0, instance:test.ProductPrice@70e38ce1]" started-at="2025-03-09T16:44:33 IST" name="ClicFirstLink" finished-at="2025-03-09T16:44:33 IST" depends-on-methods="test.ProductPrice.searchProductName" duration-ms="164" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[expected Result : ₹57,900]]>
@@ -62,12 +96,52 @@
           </reporter-output>
         </test-method> <!-- ClicFirstLink -->
       </class> <!-- test.ProductPrice -->
+      <class name="test.BrandTest">
+        <test-method signature="searchProductName()[pri:0, instance:test.BrandTest@3cce57c7]" started-at="2025-03-09T16:44:19 IST" name="searchProductName" finished-at="2025-03-09T16:44:22 IST" duration-ms="3638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductName -->
+        <test-method signature="deviceValidation()[pri:0, instance:test.BrandTest@3cce57c7]" started-at="2025-03-09T16:44:22 IST" name="deviceValidation" finished-at="2025-03-09T16:44:30 IST" depends-on-methods="test.BrandTest.searchProductName" duration-ms="7078" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[expected Brand : Apple]]>
+            </line>
+            <line>
+              <![CDATA[actual Brand : Apple]]>
+            </line>
+            <line>
+              <![CDATA[expected Operating_system : iOS]]>
+            </line>
+            <line>
+              <![CDATA[actual Operating_system : iOS]]>
+            </line>
+            <line>
+              <![CDATA[expected Memory_storage_capacity : 128 GB]]>
+            </line>
+            <line>
+              <![CDATA[actual Memory_storage_capacity : 128 GB]]>
+            </line>
+            <line>
+              <![CDATA[expected ScreenSize : 6.1 Inches]]>
+            </line>
+            <line>
+              <![CDATA[actual ScreenSize : 6.1 Inches]]>
+            </line>
+            <line>
+              <![CDATA[expected ModelName iPhone 16e]]>
+            </line>
+            <line>
+              <![CDATA[actual ModelName : iPhone 16e]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deviceValidation -->
+      </class> <!-- test.BrandTest -->
       <class name="test.BaseTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.BaseTest@68878f6d]" started-at="2025-03-09T14:36:21 IST" name="beforeTest" finished-at="2025-03-09T14:36:30 IST" duration-ms="9103" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.BaseTest@a8ef162]" started-at="2025-03-09T16:44:10 IST" name="beforeTest" finished-at="2025-03-09T16:44:18 IST" duration-ms="8496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.BaseTest@68878f6d]" started-at="2025-03-09T14:36:49 IST" name="afterTest" finished-at="2025-03-09T14:36:51 IST" duration-ms="2435" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.BaseTest@a8ef162]" started-at="2025-03-09T16:44:35 IST" name="afterTest" finished-at="2025-03-09T16:44:37 IST" duration-ms="1547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

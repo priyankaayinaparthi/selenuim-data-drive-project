@@ -9,6 +9,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import pom.SearchPage1;
 import org.testng.annotations.BeforeMethod;
+import utils.Common;
 
 import java.time.Duration;
 import java.util.List;
@@ -18,6 +19,7 @@ import static org.testng.Assert.assertTrue;
 
 public class SearchPage extends BaseTest {
     String SearchName;
+
 
     @Test
     public void searchProductName() {
@@ -30,13 +32,14 @@ public class SearchPage extends BaseTest {
     public void searchProductNamelistvalidate() throws InterruptedException {
 
         String expectedResult = "iphone 16e";
-        String actualResult = searchPage1.getResultText();
+        // String actualResult = searchPage1.getproductNameText();
+        String actualResult = SearchName;
 
 
         Reporter.log("expected Result : " + expectedResult);
-        Reporter.log("actual Result : " + SearchName);
+        Reporter.log("actual Result : " + actualResult);
 
-        assertTrue(SearchName.equals(expectedResult), "Search the Product is mismatch,");
+        assertTrue(actualResult.equals(expectedResult), "Search the Product is mismatch,");
 
     }
 

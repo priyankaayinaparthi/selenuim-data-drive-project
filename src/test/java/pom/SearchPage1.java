@@ -9,7 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class SearchPage1 {
+
     private WebDriver driver;
+
     @CacheLookup
     @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
     private WebElement textsearch;
@@ -49,9 +51,9 @@ public class SearchPage1 {
         searchbutton.click();
     }
 
-    public String getproductNameText() {
+   /* public String getproductNameText() {
         return textsearch.getDomAttribute("value");
-    }
+    }*/
 
     public String getResultText() {
         return resulttext.getText();

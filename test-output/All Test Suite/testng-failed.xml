@@ -3,9 +3,19 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="all(failed)">
     <classes>
+      <class name="test.SearchPage">
+        <methods>
+          <include name="searchProductName"/>
+          <include name="searchProductNamelistvalidate"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="testSearchForValidate"/>
+        </methods>
+      </class> <!-- test.SearchPage -->
       <class name="test.ProductPrice">
         <methods>
           <include name="afterTest"/>
+          <include name="searchProductName"/>
           <include name="beforeTest"/>
           <include name="ClicFirstLink"/>
         </methods>
