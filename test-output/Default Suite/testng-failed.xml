@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="selenuim-data-drive-project(failed)">
     <classes>
-      <class name="test.BaseTest">
+      <class name="test.SearchPage">
         <methods>
+          <include name="searchProductName"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="searchProductNamelistvalidate"/>
+          <include name="testSearchForValidate"/>
         </methods>
-      </class> <!-- test.BaseTest -->
+      </class> <!-- test.SearchPage -->
     </classes>
   </test> <!-- selenuim-data-drive-project(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

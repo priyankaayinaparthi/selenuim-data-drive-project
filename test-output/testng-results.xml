@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[expected Result : ₹57,900]]>
+    </line>
+    <line>
+      <![CDATA[actual Result : ₹57,900]]>
+    </line>
+    <line>
+      <![CDATA[expected Result : iphone 16e]]>
+    </line>
+    <line>
+      <![CDATA[actual Result : iphone 16e]]>
+    </line>
+    <line>
+      <![CDATA[expected Result : 20]]>
+    </line>
+    <line>
+      <![CDATA[actual Result : 20]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-03-06T16:51:00 IST" name="Default Suite" finished-at="2025-03-06T16:51:16 IST" duration-ms="16079">
+  <suite started-at="2025-03-09T14:36:21 IST" name="All Test Suite" finished-at="2025-03-09T14:36:51 IST" duration-ms="30586">
     <groups>
     </groups>
-    <test started-at="2025-03-06T16:51:00 IST" name="selenuim-data-drive-project" finished-at="2025-03-06T16:51:16 IST" duration-ms="16079">
+    <test started-at="2025-03-09T14:36:21 IST" name="all" finished-at="2025-03-09T14:36:51 IST" duration-ms="30586">
+      <class name="test.SearchPage">
+        <test-method signature="searchProductName()[pri:0, instance:test.SearchPage@2ca26d77]" started-at="2025-03-09T14:36:44 IST" name="searchProductName" finished-at="2025-03-09T14:36:49 IST" duration-ms="4156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductName -->
+        <test-method signature="searchProductNamelistvalidate()[pri:0, instance:test.SearchPage@2ca26d77]" started-at="2025-03-09T14:36:49 IST" name="searchProductNamelistvalidate" finished-at="2025-03-09T14:36:49 IST" depends-on-methods="test.SearchPage.searchProductName" duration-ms="244" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[expected Result : iphone 16e]]>
+            </line>
+            <line>
+              <![CDATA[actual Result : iphone 16e]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchProductNamelistvalidate -->
+        <test-method signature="testSearchForValidate()[pri:0, instance:test.SearchPage@2ca26d77]" started-at="2025-03-09T14:36:49 IST" name="testSearchForValidate" finished-at="2025-03-09T14:36:49 IST" depends-on-methods="test.SearchPage.searchProductName" duration-ms="51" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[expected Result : 20]]>
+            </line>
+            <line>
+              <![CDATA[actual Result : 20]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSearchForValidate -->
+      </class> <!-- test.SearchPage -->
+      <class name="test.ProductPrice">
+        <test-method signature="ClicFirstLink()[pri:0, instance:test.ProductPrice@776a6d9b]" started-at="2025-03-09T14:36:30 IST" name="ClicFirstLink" finished-at="2025-03-09T14:36:44 IST" duration-ms="13845" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[expected Result : ₹57,900]]>
+            </line>
+            <line>
+              <![CDATA[actual Result : ₹57,900]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ClicFirstLink -->
+      </class> <!-- test.ProductPrice -->
       <class name="test.BaseTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.BaseTest@3e2055d6]" started-at="2025-03-06T16:51:00 IST" name="beforeTest" finished-at="2025-03-06T16:51:14 IST" duration-ms="14106" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.BaseTest@68878f6d]" started-at="2025-03-09T14:36:21 IST" name="beforeTest" finished-at="2025-03-09T14:36:30 IST" duration-ms="9103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="searchProductNamelistvalidate()[pri:0, instance:test.BaseTest@3e2055d6]" started-at="2025-03-06T16:51:14 IST" name="searchProductNamelistvalidate" finished-at="2025-03-06T16:51:14 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProductNamelistvalidate -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.BaseTest@3e2055d6]" started-at="2025-03-06T16:51:14 IST" name="afterTest" finished-at="2025-03-06T16:51:16 IST" duration-ms="1634" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.BaseTest@68878f6d]" started-at="2025-03-09T14:36:49 IST" name="afterTest" finished-at="2025-03-09T14:36:51 IST" duration-ms="2435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- test.BaseTest -->
-    </test> <!-- selenuim-data-drive-project -->
-  </suite> <!-- Default Suite -->
+    </test> <!-- all -->
+  </suite> <!-- All Test Suite -->
 </testng-results>
